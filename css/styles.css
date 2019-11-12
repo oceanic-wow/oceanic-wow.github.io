@@ -6,16 +6,44 @@
 
 body
 {
-	background: url("../img/background_lo.jpg");
+	background-color: #222;
+}
+
+#preload
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url("../img/background_pre.jpg");
 	background-position: center;
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover; /* Resize the background image to cover the entire container */
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	min-width: 100vw;
 	min-height: 100vh;
 
-	background-color: #222;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
+	z-index: -2;
+}
 
+#background
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url("../img/background_lo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	min-width: 100vw;
+	min-height: 100vh;
+
+	z-index: -1;
 }
 
 #content
